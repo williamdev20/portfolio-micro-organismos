@@ -5,10 +5,11 @@ import { LabPractice } from './sections/lab-practice/lab-practice';
 import { Protozoans } from './sections/protozoans/protozoans';
 import { Fungi } from './sections/fungi/fungi';
 import { Data } from './sections/data/data';
+import { Footer } from './sections/footer/footer';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Hero, LabPractice, Protozoans, Fungi, Data],
+  imports: [RouterOutlet, Hero, LabPractice, Protozoans, Fungi, Data, Footer],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
