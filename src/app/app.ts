@@ -6,10 +6,11 @@ import { Protozoans } from './sections/protozoans/protozoans';
 import { Fungi } from './sections/fungi/fungi';
 import { Data } from './sections/data/data';
 import { Footer } from './sections/footer/footer';
+import { Video } from './sections/video/video';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Hero, LabPractice, Protozoans, Fungi, Data, Footer],
+  imports: [RouterOutlet, Hero, LabPractice, Protozoans, Video, Fungi, Data, Footer],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
