@@ -43,10 +43,17 @@
     <div class="flex flex-col rounded-3xl border border-[#39FF14] p-6 gap-4 flex-1">
       <h3 class="text-[#B366FF] font-inter font-bold text-lg">Evidências em Campo</h3>
       <div class="grid grid-cols-2 gap-4 mt-2">
-        <div class="rounded-2xl border border-white/30 bg-[#1A1A1A] aspect-video"></div>
-        <div class="rounded-2xl border border-white/30 bg-[#1A1A1A] aspect-video"></div>
-        <div class="rounded-2xl border border-white/30 bg-[#1A1A1A] aspect-video"></div>
-        <div class="rounded-2xl border border-white/30 bg-[#1A1A1A] aspect-video"></div>
+        <img src="assets/video/sample1.jpeg" class="rounded-2xl border border-white/30 bg-[#1A1A1A] object-cover object-center aspect-video">
+        <img src="assets/video/sample2.jpeg" class="rounded-2xl border border-white/30 bg-[#1A1A1A] object-cover object-center aspect-video">
+        <img src="assets/video/result1.jpeg" class="rounded-2xl border border-white/30 bg-[#1A1A1A] object-cover object-center aspect-video">
+        <video
+          #videoPlayer
+          autoplay
+          loop
+          playsinline
+          class="rounded-2xl border border-white/30 bg-[#1A1A1A] object-cover object-center aspect-video">
+          <source src="assets/video/video-sample.mp4" type="video/mp4">
+        </video>
       </div>
     </div>
   </div>

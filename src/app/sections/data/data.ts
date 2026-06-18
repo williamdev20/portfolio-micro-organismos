@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit, ElementRef, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-data',
@@ -6,4 +6,18 @@ import { Component } from '@angular/core';
   templateUrl: './data.html',
   //styleUrl: './data.css',
 })
-export class Data {}
+export class Data implements AfterViewInit {
+
+  @ViewChild('videoPlayer')
+  videoPlayer!: ElementRef<HTMLVideoElement>;
+
+  ngAfterViewInit(): void {
+    const video = this.videoPlayer.nativeElement;
+
+    video.defaultMuted = true;
+    video.muted = true;
+    video.volume = 0;
+
+    video.play().catch(err => console.error(err));
+  }
+}
